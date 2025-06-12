@@ -1,0 +1,30 @@
+text_correction_task:
+  description: >
+    Take the extracted text and correct all spelling and grammatical errors.
+    Return the cleaned and readable version of the text.
+  expected_output: >
+    A grammatically correct, well-formatted, and easy-to-read version of the original text.
+  input: "{extracted_text}"
+  agent: text_corrector
+
+health_parameter_extraction_task:
+  description: >
+    Given the following raw text "{text_correction_task.output}"from a scanned or handwritten health document, 
+    extract key health parameters, medications and disease diagnosed from the patient report.
+  expected_output: >
+    present an output detailing all the health parameter, medications and diseases used by patient in the provided text.
+  agent: health_parameter_extractor
+
+diet_planning_task: 
+  description: >
+    Based on the corrected health report: {health_parameter_extraction_task.output}, create a customized diet plan for vegeterian.
+  expected_output: >
+    A detailed diet plan for vegeterian and saved in file
+  agent: diet_planner
+
+diet_planning_task2: 
+  description: >
+    Based on the corrected health report: {health_parameter_extraction_task.output}, create a customized diet plan for non vegeterian.
+  expected_output: >
+    A detailed diet plan for non vegeterian and saved in file
+  agent: diet_planner
