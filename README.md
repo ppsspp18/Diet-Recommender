@@ -4,7 +4,7 @@
 
 Diet Recommender is an AI-powered healthcare assistant that analyzes health reports and generates personalized diet recommendations using a multi-agent workflow built with CrewAI.
 
-The system allows users to upload medical documents through a graphical user interface (GUI). The uploaded document is processed using OCR technology to extract text, which is then analyzed by a team of AI agents that collaboratively generate customized vegetarian and non-vegetarian diet plans.
+The system allows users to upload medical documents through a graphical user interface (GUI). The uploaded document is processed using OCR technology to extract text, which is then analyzed by a team of AI agents that collaboratively generate diet plan.
 
 The primary objective of this project is to demonstrate the implementation of Agentic AI workflows using CrewAI while solving a practical healthcare-related problem.
 
@@ -188,17 +188,7 @@ Input:
 Extracted health information
 
 Output:
-Customized vegetarian diet plan
-
----
-
-### Diet Planning Task 2
-
-Input:
-Extracted health information
-
-Output:
-Customized non-vegetarian diet plan
+Customized diet plan
 
 ---
 
