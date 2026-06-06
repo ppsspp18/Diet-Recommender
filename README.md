@@ -73,7 +73,8 @@ Vegetarian & Non-Vegetarian Diet Plans
 
 ### Image Processing
 
-* Pillow (PIL)
+* Pillow (PIL) : height and width resize to double, convert it to black and white, increase contrast to make text darker, 
+  
 
 ### Agent Framework
 
